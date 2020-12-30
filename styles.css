@@ -206,7 +206,7 @@
   display: flex;
   justify-content: center;
   height: 60%;
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
   margin-top: 100px;
   margin-bottom: 10px;
   margin-right: 80px;
@@ -217,19 +217,23 @@
   margin-top: 0px;
   margin-left: 20px;
   width:100%;
+  /*background-color: beige;*/
 }
 
 .mapdiv path{
   fill:beige;
-  stroke:blueviolet;
+  stroke:rgb(120, 121, 119);
   stroke-width: 4px;
   transition: fill 0.3s
 }
 
-.mapdiv :hover{
-  fill:crimson
-}
 
+.mapdiv :hover{
+  /*fill:crimson;*/
+  /*opacity: 0.6;*/
+  stroke: rgb(70, 150, 219);
+  stroke-width: 7px;
+}
 
 #tooltip {
   background: rgb(4, 81, 247);
@@ -238,8 +242,6 @@
   padding: 5px;
   color: azure;
 }  
-
-
 
 
 /* Mobile Responsive */
@@ -331,3 +333,42 @@
 
 
 
+
+/* graph Section */
+.graphs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10rem 0;
+}
+
+
+.services__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.services__card {
+  margin-right: 50px;
+  margin-left: 50px;
+  height: 425px;
+  width: 480px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-color: aliceblue;
+  transition: 0.3s ease-in;
+}
+
+
+
+.services__card:hover {
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
